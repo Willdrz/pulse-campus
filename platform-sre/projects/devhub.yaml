@@ -20,6 +20,8 @@ spec:
       namespace: monitoring
     - server: https://kubernetes.default.svc
       namespace: argo-rollouts
+    - server: https://kubernetes.default.svc
+      namespace: kube-system
 
   clusterResourceWhitelist:
     - group: ""
