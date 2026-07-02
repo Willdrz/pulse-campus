@@ -48,14 +48,11 @@ prometheus:
     # quel que soit leur namespace. C'est l'option la plus permissive,
     # utile en TP.
     serviceMonitorSelectorNilUsesHelmValues: false
-    serviceMonitorSelector:
-      matchLabels:
-        release: kps
+    serviceMonitorSelector: {}
     podMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelector: {}
     ruleSelectorNilUsesHelmValues: false
-    ruleSelector:
-      matchLabels:
-        release: kps
+    ruleSelector: {}
 
 # ---- Alertmanager ----
 alertmanager:
